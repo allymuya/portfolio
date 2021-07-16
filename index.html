@@ -1,41 +1,97 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-<meta charset="utf-8">  
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-rel="stylesheet" 
-integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
-crossorigin="anonymous">
-<link rel="icon" type="image/png" href="img/techis-logo.png">
-<link rel="stylesheet" href="style.css">
-<title>portfolio</title>
-
- </head>
- 
- <body>
-
-   <nav class="navbar navbar-expand-lg navbar-light showdow-sm">
-   <div class="container">
-     <a class="navbar-brand title-icon-icon" href="#"><span class="font-primary">p</span>ortfolio</a>
-
-     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
-        <span class="navbar-toggler-icon"></span>
-     </button>
-     <div class="collapse navbar-collapse" id="navbartogglerDemo01">
-      <div class="collapse navbar-collapse" id="navbartoggle"></div>
-       <ul class="navbar-nav me-auto mb-2">
-         <li class="nav-item">  
-           <a class="nav-link font-black" href="#about">about</a>
-         </li>
-     </ul>
-     </div>
-   </div>
- </nav>
-
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
- </body>
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/png" href="img/techis-logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style1.css?v=1">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand title-icon" href="#"><span class="font-primary">P</span>ortfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav  ms-auto mb-2">
+                    <li class="nav-item">
+                        <a class="nav-link font-black" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-black" href="#projects">Projects</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="about">
+        <h2><span class="font-primary">A</span>bout</h2>
+        <img src="img/profile_pic.jpg">
+        <div class="name">Ally muya</div>
+        <div class="vocation">Web Application Developer</div>
+        <div class="skills"> HTML / CSS / Javescript / React.js / Redux / Python / Django / Express.js / AWS(Basics) / Docker (Basics) </div>
+        <p>
+            Im will try all my best to finish my class.
+            </p>
+        <div class="email">allymuya00@gmail.com</div>
+        <div class="icons">
+            <a href="https://github.com/allymuya/portfolio"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/allymuya1991/"><i class="bi bi-linkedin ms-3"></i></a>
+        </div>
+    </div>
+    <div id="projects">
+        <h2><span class="font-primary">P</span>roject</h2>
+        <div class="card mb-3">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="img/project-twitter.png " class="card-img-top ">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Twitter Clone</h5>
+                        <p class="card-text"> this is my twitter project made using HTml / CSS /</p>
+                        <p class="card-text"><small class="text-muted">
+                          Text Login Account<br>
+                          Email: allymuya00@gmail.com<br>
+                          Pass: 12345
+                        </small></p>
+                        <a href="#" target="_blank" class="btn btn-secondary">Website</a>
+                        <a href="#" target="_blank" class="btn btn-dark">Github</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4 ">
+<img src="img/project-netflix.png " class="card-img-top ">
+                </div>
+                <div class="col-md-8 ">
+                    <div class="card-body ">
+                        <h5 class="card-title ">Netflix clone</h5>
+                        <p class="card-text ">This is my netflix project using HTML / CSS / JS</p>
+                        <p class="card-text "><small class="text-muted ">
+                        Text Login Account<br>
+                        Email: allymuya00@gmail.com<br>
+                        Pass: 12345
+                      </small></p>
+                        <a href="#" target="_blank" class="btn btn-secondary ">Website</a>
+                        <a href="#" target="_blank" class="btn btn-dark ">Github</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Import Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js " integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0 " crossorigin="anonymous "></script>
+</body>
 </html>
+
+
+
+
+
